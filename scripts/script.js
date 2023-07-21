@@ -32,6 +32,8 @@ function createUser(e) {
     .then((response) => {
         if (response.status == "success") {
           console.log("done")
+          window.location.href = `index.html`;
+
       
         }else{
             console.log("failed")
