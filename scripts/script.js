@@ -14,11 +14,12 @@ function createUser(e) {
   const password = document.getElementById("exampleInputPassword1").value;
   const cellnumber = document.getElementById("cellnumber").value;
   const newUser = {
-    FullName,
+ full_name:FullName,
     email,
     password,
-    cellnumber,
+    cell_phone:cellnumber,
   }
+  console.log(newUser)
   fetch("http://localhost/Full-Stack-Mini-Project/signup.php", {
     method: "POST",
     headers: {

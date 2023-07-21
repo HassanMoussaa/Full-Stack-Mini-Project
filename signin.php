@@ -1,5 +1,6 @@
 <?php
 include('connection.php');
+$_POST = json_decode(file_get_contents('php://input'), true);
 
 $email = $_POST['email'];
 $password = $_POST['password'];
