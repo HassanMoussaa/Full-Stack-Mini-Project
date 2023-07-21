@@ -25,4 +25,5 @@ if ($email_exists == 0) {
     $response['status'] = "failed";
     $response['message'] = "There is already a user with this email!";
 }
-
+header('Content-Type: application/json'); 
+echo json_encode($response);

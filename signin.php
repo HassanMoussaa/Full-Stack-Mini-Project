@@ -23,3 +23,6 @@ if ($num_rows == 0) {
         $response['status'] = "Email and/or password is incorrect";
     }
 }
+
+
+echo json_encode($response);
