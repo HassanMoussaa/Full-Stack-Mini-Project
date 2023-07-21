@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (data.status === "logged in") {
           
-          window.location.href = `dashboard.html?name=${data.full_name}`;
+          window.location.href = `dashboard.html?username=${data.full_name}`;
         } else {
            const errorElement = document.getElementById("error-message");
-          errorElement.textContent = data.status;
+           errorElement.textContent = data.status;
         }
       })
       .catch((error) => {
